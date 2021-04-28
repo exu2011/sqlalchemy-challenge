@@ -79,13 +79,5 @@ def precipitation():
     session.close()
     return jsonify(precipitation_and_date)
 
-    # Convert list of tuples into normal list
-    all_names = list(np.ravel(results))
-    return jsonify(all_names)
-
-
-
-
-
 if __name__ == '__main__':
     app.run(debug=True)
